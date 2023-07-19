@@ -431,13 +431,8 @@ header{
     .game-type img{
         width: 20px;
     }
-    .banner-container{
-        height: 500px;
-    }
-    .video-game-section{
-        margin-top: 300px;
-        height: 1000px;
-    }
+    
+    
 }
 
 @media screen and (min-width:576px) and (max-width: 960px) {
