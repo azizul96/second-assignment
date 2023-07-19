@@ -78,7 +78,7 @@ header{
     font-size: 20px;
     margin-left: 5px;
 }
-/* Banner style start here */
+/* Banner style start here ........*/
 .banner-container{
     width: 80%;
     margin: 50px auto;
@@ -148,7 +148,7 @@ header{
     width: 400px;
 }
 
-/*  */
+/* gamers section start .......... */
 .gamers-banner{
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     margin-bottom: 100px;
@@ -189,7 +189,88 @@ header{
     font-size: 30px;
     font-weight: 700;
 }
-/*  */
+/* Gaming video section................................. */
+.video-game-section{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: space-around;
+}
+.video-game-section h1{
+    color: #0B0223;
+    text-align: center;
+    font-size: 40;
+    font-weight: 700;
+
+}
+
+.video-game-section p{
+    color: #534C64;
+      
+}
+.gaming-video-container{
+    display: flex;
+    height: 450px;   
+    justify-content: center;
+    
+    gap: 30px;
+    
+}
+.video-box p{
+  width: 300px;
+  
+}
+
+.video-image{
+    position: relative;
+    height: 350px;
+    margin-top: 20px;
+    border: 5px solid transparent;
+
+}
+.video-image img{
+    height: 350px;  
+    
+}
+.video-image:hover{
+  border: 5px solid rgb(249,72,199);
+  border-radius:20px ;
+  
+}
+.video-icon{
+    display: none;
+    background: rgb(13, 13, 13,0.6);
+    width: 100%;
+    border-radius: 16px;
+   
+    height: 350px;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    align-items: center;
+    
+}
+.video-box:hover .video-icon{
+  display: block;
+  
+}
+
+.video-image{
+    position: relative;
+}
+.video-icon p{
+    margin-top: -140px;
+    position: absolute;
+    color:white;
+    bottom: 70px;
+    margin-left: px;
+}
+.video-icon i{
+  font-size: 30px;
+  margin-top: 150px;
+  color: white;
+}
+/* ........................................................ */
 .online-game-image-box{
     position: relative;
     display: inline-block;
@@ -241,7 +322,7 @@ header{
     gap: 5px;
 
     background-color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 20px;
     text-align: center;
     cursor: pointer;
@@ -301,8 +382,9 @@ header{
     font-size: 16px;
 }
 .footer-icon i{
-    font-size: 35px;
+    font-size: 30px;
 }
+
 
 
 /* Responsive style  */
@@ -310,8 +392,7 @@ header{
 @media screen and (max-width: 576px) {
     .nav-section, 
     .nav-container, 
-    .gamers-container,
-    .gaming-video-container{
+    .gamers-container{
         flex-direction: column;
     }
     .banner-container,
@@ -338,16 +419,31 @@ header{
     .footer-section{
         padding: 2% 10%;
     }
+    .game-type{
+        justify-content: center;
+        align-items: center;
+        gap: 2px
 
-
-
+    }
+    .game-type p{
+        font-size: 10px;
+    }
+    .game-type img{
+        width: 20px;
+    }
+    .banner-container{
+        height: 500px;
+    }
+    .video-game-section{
+        margin-top: 300px;
+        height: 1000px;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width: 960px) {
     .nav-section, 
     .nav-container,
-    .gamers-container,
-    .gaming-video-container{
+    .gamers-container{
         flex-direction: column;
     }
     .nav-container{
@@ -369,4 +465,10 @@ header{
     }
     
 
+}
+
+@media screen and (max-width: 1400px) {
+    .video-game-section{
+        display: none;
+    }
 }
