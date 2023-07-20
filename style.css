@@ -189,88 +189,75 @@ header{
     font-size: 30px;
     font-weight: 700;
 }
-/* Gaming video section................................. */
-.video-game-section{
-    text-align: center;
-    margin-top: 100px;
+/* Gaming video section........................ */
+.video-section{
+    margin-top: 50px;
     margin-bottom: 100px;
-    justify-content: space-around;
 }
-.video-game-section h1{
+.video-section h2{
     color: #0B0223;
     text-align: center;
-    font-size: 40;
+    font-size: 40px;
     font-weight: 700;
-
+    margin-bottom: 20px;
 }
-
-.video-game-section p{
+.video-section p{
     color: #534C64;
-      
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
-.gaming-video-container{
-    display: flex;
-    height: 450px;   
-    justify-content: center;
-    
-    gap: 30px;
-    
+.video-box{
+    position: relative;
+    width: 300px;
+
 }
 .video-box p{
-  width: 300px;
-  
+    color: #534C64;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
 }
-
-.video-image{
-    position: relative;
-    height: 350px;
-    margin-top: 20px;
-    border: 5px solid transparent;
-
-}
-.video-image img{
-    height: 350px;  
-    
-}
-.video-image:hover{
-  border: 5px solid rgb(249,72,199);
-  border-radius:20px ;
-  
-}
-.video-icon{
-    display: none;
-    background: rgb(13, 13, 13,0.6);
-    width: 100%;
-    border-radius: 16px;
-   
-    height: 350px;
+.icon{
     position: absolute;
-    bottom: 0px;
+    top: 170px;
+    left: 110px;
     text-align: center;
-    align-items: center;
-    
+    opacity: 0;
 }
-.video-box:hover .video-icon{
-  display: block;
-  
+.video-box:hover .icon{
+    opacity: 100%;
+}
+.icon i{
+    font-size: 20px;
+}
+.icon p{
+    color: #ff42a5;
 }
 
-.video-image{
-    position: relative;
+.video-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    -webkit-filter: brightness(100%);
+    
 }
-.video-icon p{
-    margin-top: -140px;
-    position: absolute;
-    color:white;
-    bottom: 70px;
-    margin-left: px;
+.video-image img:hover{
+    border: 3px solid #ff42a5;
+    border-radius: 20px;
+    -webkit-filter: brightness(70%);
 }
-.video-icon i{
-  font-size: 30px;
-  margin-top: 150px;
-  color: white;
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-/* ........................................................ */
+
+/* Online game section............... */
 .online-game-image-box{
     position: relative;
     display: inline-block;
@@ -392,7 +379,8 @@ header{
 @media screen and (max-width: 576px) {
     .nav-section, 
     .nav-container, 
-    .gamers-container{
+    .gamers-container,
+    .video-container{
         flex-direction: column;
     }
     .banner-container,
@@ -438,7 +426,8 @@ header{
 @media screen and (min-width:576px) and (max-width: 960px) {
     .nav-section, 
     .nav-container,
-    .gamers-container{
+    .gamers-container,
+    .video-container{
         flex-direction: column;
     }
     .nav-container{
@@ -462,8 +451,8 @@ header{
 
 }
 
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
     .video-game-section{
         display: none;
     }
-}
+} */
